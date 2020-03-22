@@ -1,0 +1,22 @@
+{
+  "name": "concept2-stats",
+  "version": "1.0.0",
+  "author": "Ben Oman",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "csvtojson": "^2.0.10",
+    "forever": "^2.0.0",
+    "koa": "^2.11.0",
+    "koa-router": "^8.0.8",
+    "lodash": "^4.17.15",
+    "moment-timezone": "^0.5.28",
+    "puppeteer": "^2.1.1"
+  },
+  "scripts": {
+    "pull": "node ./src/pull.js",
+    "stats": "node ./src/stats.js",
+    "start": "node ./node_modules/forever/bin/forever ./src/index.js"
+  }
+}
